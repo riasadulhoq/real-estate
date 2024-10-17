@@ -4,6 +4,7 @@
 import Features from "./components/Features/Features";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
+import Properties from "./components/Properties/Properties";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Navbar></Navbar>
       <Hero></Hero>
       <Features></Features>
+      <Properties></Properties>
     </>
   );
 }
