@@ -1,5 +1,6 @@
 import Button from "../Button/Button";
 import Navlink from "./Navlink/Navlink";
+import logo from "/assets/images/logo/logo.svg";
 
 export default function Navbar() {
   return (
@@ -11,11 +12,7 @@ export default function Navbar() {
               href="index.html"
               className="navbar-logo block w-60 max-w-full px-4"
             >
-              <img
-                src="/assets/images/logo/logo.svg"
-                alt="logo"
-                className="header-logo h-12"
-              />
+              <img src={logo} alt="logo" className="header-logo h-12" />
             </a>
 
             <ul className="hidden lg:flex ">
