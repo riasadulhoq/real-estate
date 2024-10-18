@@ -1,6 +1,6 @@
 import Button from "../Button/Button";
+import Logo from "./Logo/Logo";
 import Navlink from "./Navlink/Navlink";
-import logo from "/assets/images/logo/logo.svg";
 
 export default function Navbar() {
   return (
@@ -8,12 +8,7 @@ export default function Navbar() {
       <div className="container">
         <div className="relative -mx-4 flex items-center justify-between">
           <div className="flex w-full items-center justify-between px-4 py-3">
-            <a
-              href="index.html"
-              className="navbar-logo block w-60 max-w-full px-4"
-            >
-              <img src={logo} alt="logo" className="header-logo h-12" />
-            </a>
+            <Logo></Logo>
 
             <ul className="hidden lg:flex ">
               <Navlink link={"#home"} name={"Home"}></Navlink>
