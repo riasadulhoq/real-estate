@@ -2,10 +2,13 @@ import FooterFacebook from "../SVG/Footer/FooterSocial/FooterFacebook";
 import FooterInstagram from "../SVG/Footer/FooterSocial/FooterInstagram";
 import FooterLinkedIn from "../SVG/Footer/FooterSocial/FooterLinkedIn";
 import FooterTwitter from "../SVG/Footer/FooterSocial/FooterTwitter";
+import FooterBlog from "./FooterBlog/FooterBlog";
 import FooterHeading from "./FooterHeading/FooterHeading";
 import FooterLink from "./FooterLink/FooterLink";
 import FooterLogo from "./FooterLogo/FooterLogo";
 import FooterSocial from "./FooterSocial/FooterSocial";
+import BlogImage1 from "/assets/images/blog/blog-footer-01.jpg";
+import BlogImage2 from "/assets/images/blog/blog-footer-02.jpg";
 
 export default function Footer() {
   return (
@@ -55,34 +58,19 @@ export default function Footer() {
                 Latest blog
               </h4>
               <div className="flex flex-col gap-8">
-                <a
-                  href="blog-details.html"
-                  className="group flex items-center gap-[22px]"
-                >
-                  <div className="overflow-hidden rounded">
-                    <img
-                      src="./assets/images/blog/blog-footer-01.jpg"
-                      alt="blog"
-                    />
-                  </div>
-                  <span className="max-w-[180px] text-base text-gray-7 group-hover:text-white">
-                    I think really important to design with...
-                  </span>
-                </a>
-                <a
-                  href="blog-details.html"
-                  className="group flex items-center gap-[22px]"
-                >
-                  <div className="overflow-hidden rounded">
-                    <img
-                      src="./assets/images/blog/blog-footer-02.jpg"
-                      alt="blog"
-                    />
-                  </div>
-                  <span className="max-w-[180px] text-base text-gray-7 group-hover:text-white">
-                    Recognizing the need is the primary...
-                  </span>
-                </a>
+                <FooterBlog
+                  link={"blog-details.html"}
+                  image={BlogImage1}
+                  imageName={"blog"}
+                  blogTitle={"I think really important to design with..."}
+                ></FooterBlog>
+
+                <FooterBlog
+                  link={"blog-details.html"}
+                  image={BlogImage2}
+                  imageName={"blog"}
+                  blogTitle={"Recognizing the need is the primary..."}
+                ></FooterBlog>
               </div>
             </div>
           </div>

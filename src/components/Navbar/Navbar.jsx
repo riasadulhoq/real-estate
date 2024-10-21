@@ -29,7 +29,7 @@ export default function Navbar() {
               ></Navlink>
             </ul>
 
-            <div className="sm:flex">
+            <div className="flex flex-col sm:flex-row">
               <Button
                 link={"signin.html"}
                 name={"Sign In"}
